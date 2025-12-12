@@ -1,6 +1,6 @@
 import { createContext, type ReactNode } from "react";
 import { useState } from "react";
-import { type RegisterProps } from "../components/TableProducts";
+import { type RegisterProps } from "../pages/TableProducts";
 
 interface UpdateProps{
     products: RegisterProps | null;
