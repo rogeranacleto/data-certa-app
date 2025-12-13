@@ -93,7 +93,7 @@ function openUpdateModal(register: RegisterProps){
                 </button>
             </div>
             <div className="relative pl-5 pr-5">
-                <input type="text" placeholder="Pesquise um produto" className="border border-solid border-gray-400 w-full p-2 rounded-lg focus:ring-1 focus:ring-[#0044ffee] focus:outline-none text-sm" value={search} onChange={(e) => setSearch(e.target.value)}/>
+                <input type="text" placeholder="Pesquise um registro pela descrição, lote, validade ou fornecedor" className="border border-solid border-gray-400 w-full p-2 rounded-lg focus:ring-1 focus:ring-[#0044ffee] focus:outline-none text-sm" value={search} onChange={(e) => setSearch(e.target.value)}/>
                 <FaSearch className="absolute top-2 right-10 text-2xl text-[#0044ffee]"/>
             </div>
             <div className="overflow-x-auto">
