@@ -78,7 +78,7 @@ async function saveUpdateRegister(id: RegisterProps | null){
             <IoClose className="text-black text-2xl hover:text-red-600 duration-300 ease-in-out"/>
           </button>
 
-          <h2 className="text-black text-lg font-bold mb-1.5">Atualizaçã de Registro de Produto</h2>
+          <h2 className="text-black text-lg font-bold mb-1.5">Atualização de Registro de Produto</h2>
           <p className="text-gray-400 mb-5.5">
             Preencha os campos para atualizar esse registro de produto.
           </p>
@@ -124,7 +124,7 @@ async function saveUpdateRegister(id: RegisterProps | null){
               </div>
             </div>
             <button className="text-white bg-[#0044ffee] mt-4 p-2 rounded-lg cursor-pointer hover:bg-[#0344f8] hover:brightness-125 duration-500" type="button" onClick={() => saveUpdateRegister(products)}>
-              Criar registro
+              Atualizar registro
             </button>
           </div>
         </div>
