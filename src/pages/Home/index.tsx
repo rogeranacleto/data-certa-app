@@ -84,8 +84,8 @@ export function Home(){
                         </div>
                         <div className="max-w-lg">
                             <h2 className="font-bold text-4xl max-w-lg" data-aos="fade-left" data-aos-duration="1900">A solução para seus problemas de vencimentos.</h2>
-                            <p className="mt-6 text-[#c9c5c5]" data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat veniam soluta error natus aspernatur 
-                                exercitationem labore consectetur et, sint, nam, repudiandae vitae. Laudantium, quis adipisci aliquid nesciunt atque earum repellat!</p>
+                            <p className="mt-6 text-[#c9c5c5]" data-aos="fade-left" data-aos-duration="2000">O sistema ideal para gerenciar vencimentos de forma simples e segura. Com cadastro ágil, alertas inteligentes e controle completo de lotes, 
+                                fornecedores e validades, você evita perdas e mantém tudo organizado. Uma interface intuitiva que transforma o controle de estoque em um processo rápido, confiável e eficiente.</p>
                             <ul className="mt-6 flex flex-col gap-3" >
                                 <li className="text-white font-bold" data-aos="fade-left" data-aos-duration="2100">✔ Cadastro ágil</li>
                                 <li className="text-white font-bold" data-aos="fade-left" data-aos-duration="2200">✔ Detalhes completos</li>
