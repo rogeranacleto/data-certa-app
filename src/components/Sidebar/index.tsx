@@ -11,10 +11,15 @@ import { auth } from "../../services/firebaseConnection";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import { NavLink } from "react-router";
-export function Sidebar(){
+
+interface SidebarProps{
+    isCollapsed: boolean;
+    setIsCollapsed: (isCollapsed: boolean) => void;
+}
+
+export function Sidebar({isCollapsed, setIsCollapsed}: SidebarProps){
 const {logout} = useContext(AuthContext);
 const navigate = useNavigate();
-const [isCollapsed, setIsCollapsed] = useState(false);
 const [isHovered, setIsHovered] = useState(true);
 
 async function logoutUser(){
@@ -28,12 +33,19 @@ function sidebarCollapsed(){
 }
     return(
         <div>
-            <main className={`${!isCollapsed ? "w-64" : "w-20"} h-screen bg-white flex flex-col transition-all ease-in-out duration-300`}
+            <main
+            className={`
+                fixed top-0 left-0
+                ${!isCollapsed ? "w-64" : "w-20"}
+                h-screen bg-white flex flex-col
+                transition-all ease-in-out duration-300
+                z-50
+            `}
             onMouseEnter={() => {
-                if(isCollapsed) setIsHovered(true);
+                if (isCollapsed) setIsHovered(true);
             }}
             onMouseLeave={() => {
-                if(isCollapsed) setIsHovered(false)
+                if (isCollapsed) setIsHovered(false);
             }}
             >
                 <nav className="text-black pr-5 pl-5 flex flex-col h-screen justify-between">
