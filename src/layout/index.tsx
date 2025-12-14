@@ -1,15 +1,24 @@
 import { Outlet } from "react-router"
 import { Sidebar } from "../components/Sidebar"
-export function Layout(){
+import { useState } from "react";
+export function Layout() {
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
-    return(
-        <>
-            <div className="flex bg-white">
-                <Sidebar />
-                <main className="p-4 overflow-y-auto flex-1 bg-white">
-                    <Outlet />
-                </main>
-            </div>   
-        </>
-    )
+  return (
+    <div className="bg-white min-h-screen">
+      <Sidebar
+        isCollapsed={isCollapsed}
+        setIsCollapsed={setIsCollapsed}
+      />
+
+      <main
+        className={`
+          p-4 overflow-y-auto transition-all duration-300
+          ${isCollapsed ? "ml-20" : "ml-64"}
+        `}
+      >
+        <Outlet />
+      </main>
+    </div>
+  );
 }
