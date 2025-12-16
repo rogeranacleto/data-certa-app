@@ -12,7 +12,7 @@ import { AnimatePresence } from "motion/react";
 import { ModalRegister } from "../../components/ModalRegister";
 import { FaSearch } from "react-icons/fa";
 import { LuPackagePlus } from "react-icons/lu";
-
+import { formatDate } from "../TableProducts";
 function getFullDate(date: Date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -153,7 +153,7 @@ export function ExpiringProducts(){
                 <tr className="border-b rounded-lg border-gray-100/20 text-left pt-3.5 pb-3.5 pl-7.5 bg-white z-50 hover:scale-101 shadow-lg hover:shadow-lg duration-300 ease-in-out" key={item.id}>
                   <td className="p-7.5 wrap-break-words whitespace-normal rounded-l-2xl">{item.description}</td>
                   <td className="p-7.5 wrap-break-words whitespace-normal">{item.batch}</td>
-                  <td className="p-7.5 wrap-break-words whitespace-normal">{item.validity}</td>
+                  <td className="p-7.5 wrap-break-words whitespace-normal">{formatDate(item.validity)}</td>
                   <td className="p-7.5 wrap-break-words whitespace-normal">{item.supplier}</td>
                   <td className="p-7.5 wrap-break-words whitespace-normal">
                     {(() => {

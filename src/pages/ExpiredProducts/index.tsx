@@ -10,6 +10,7 @@ import { ModalRegister } from "../../components/ModalRegister";
 import { AnimatePresence } from "motion/react";
 import { LuPackagePlus } from "react-icons/lu";
 import type { RegisterProps } from "../TableProducts";
+import { formatDate } from "../TableProducts";
 
 function getFullDate(date: Date) {
   const year = date.getFullYear();
@@ -106,7 +107,7 @@ export function ExpiredProducts(){
                 <tr className="border-b rounded-lg border-gray-100/20 text-left pt-3.5 pb-3.5 pl-7.5 bg-white z-50 hover:scale-101 shadow-lg hover:shadow-lg duration-300 ease-in-out" key={item.id}>
                 <td className="p-7.5 wrap-break-words whitespace-normal rounded-l-2xl">{item.description}</td>
                 <td className="p-7.5 wrap-break-words whitespace-normal">{item.batch}</td>
-                <td className="p-7.5 wrap-break-words whitespace-normal">{item.validity}</td>
+                <td className="p-7.5 wrap-break-words whitespace-normal">{formatDate(item.validity)}</td>
                 <td className="p-7.5 wrap-break-words whitespace-normal">{item.supplier}</td>
                 <td className="p-7.5 wrap-break-words whitespace-normal">
                 <span className="text-white font-bold bg-[#e20303] pl-3 pr-3 pt-2 pb-2 rounded-2xl">Vencido</span>

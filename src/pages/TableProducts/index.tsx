@@ -18,6 +18,11 @@ export interface RegisterProps{
     supplier: string;
 }
 
+export function formatDate(date: string){
+    const [year, month, day] = date.split("-");
+    return `${day}/${month}/${year}`
+}
+
 export function TableProducts(){
 const {changeUpdateModal} = useContext(UpdateContext);
 const [openModalUpdate, setOpenModalUpdate] = useState(false)
@@ -115,7 +120,7 @@ function openUpdateModal(register: RegisterProps){
                             <tr className="border-b rounded-lg border-gray-100/20 text-left pt-3.5 pb-3.5 pl-7.5 bg-white z-50 hover:scale-101 shadow-lg hover:shadow-lg duration-300 ease-in-out" key={item.id}>
                                 <td className="p-7.5 wrap-break-words whitespace-normal rounded-l-2xl">{item.description}</td>
                                 <td className="p-7.5 wrap-break-words whitespace-normal">{item.batch}</td>
-                                <td className="p-7.5 wrap-break-words whitespace-normal">{item.validity}</td>
+                                <td className="p-7.5 wrap-break-words whitespace-normal">{formatDate(item.validity)}</td>
                                 <td className="p-7.5 wrap-break-words whitespace-normal">{item.supplier}</td>
                                 <td className="p-7.5 wrap-break-words whitespace-normal">
                                 {(() => {
