@@ -1,5 +1,5 @@
 # 📦 DataCerta – Controle de Vencimentos de Produtos
-![DataCerta Preview](./src/screenshots/landing-page.png)
+![DataCerta Preview](screenshots/landing-page.png)
 
 Sistema web para **gerenciamento e controle de validade de produtos**, permitindo que usuários acompanhem prazos de vencimento, evitem perdas e mantenham a organização de seus registros de forma simples e eficiente.
 
@@ -16,22 +16,22 @@ O sistema conta com **autenticação**, **área administrativa**, **filtros inte
 ## 🖼️ Demonstração
 
 ### Login
-![Login](./src/screenshots/login.png)
+![Login](screenshots/login.png)
 
 ### Cadastro (Signup)
-![Signup](./src/screenshots/signup.png)
+![Signup](screenshots/signup.png)
 
 ### Área Administrativa
-![Admin](./src/screenshots/admin.png)
+![Admin](screenshots/admin.png)
 
 ### Cadastro de Produto
-![Modal Registro](./src/screenshots/register-products.png)
+![Modal Registro](screenshots/register-products.png)
 
 ### Produtos Vencendo
-![Vencendo](./src/screenshots/expiring-products.png)
+![Vencendo](screenshots/expiring-products.png)
 
 ### Produtos Vencidos
-![Vencidos](./src/screenshots/expired-products.png)
+![Vencidos](screenshots/expired-products.png)
 
 
 ---
