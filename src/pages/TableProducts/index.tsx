@@ -34,7 +34,7 @@ function changeModal(){
 }
 useEffect(() => {
     async function loadProductRegistration(){
-        const unsub = onSnapshot(collection(db, "productRegistration"),(snapshot) => {
+            onSnapshot(collection(db, "productRegistration"),(snapshot) => {
             let listProductRegistration: RegisterProps[] = [];
             snapshot.forEach((doc) => {
                 listProductRegistration.push({
