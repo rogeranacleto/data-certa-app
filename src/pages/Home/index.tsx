@@ -40,7 +40,7 @@ export function Home(){
                     src={imgSistema}
                     alt="Imagem do Sistema"
                     data-aos="fade-up" data-aos-duration="2100"
-                    className="hidden lg:block max-w-5xl w-full rounded-2xl absolute left-1/2 -translate-x-1/2 top-[50.5%]"
+                    className="hidden lg:block max-w-5xl w-full rounded-2xl absolute left-1/2 -translate-x-1/2 top-12/12"
                     />
                 </div>
                 <div className="max-w-screen w-full min-h-120 bg-[linear-gradient(135deg,#0224a5_0%,#0344f8_40%,#4400ff_90%)] bg-no-repeat bg-fixed rounded-2xl linear mt-5 flex items-center justify-center pb-5">
