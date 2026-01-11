@@ -244,7 +244,7 @@ export function Home(){
             data-aos="fade-left"
             data-aos-duration="2300"
           >
-            <p className="text-white font-bold text-center">
+            <p className="text-white font-bold text-center text-sm">
               Desenvolvido por Roger Anacleto • © 2025 Todos os direitos
               reservados.
             </p>
