@@ -41,8 +41,8 @@ export function Home(){
             <p className="text-blackfont-medium text-center text-lg sm:text-lg">
               Muitas empresas enfrentam dificuldades para acompanhar as datas de
               validade do estoque e só percebem os problemas quando já é tarde
-              demais. A DataCerta surge exatamente para tornar esse processo
-              simples, automático e muito mais confiável. Com ela, você mantém o
+              demais. O DataCerta surge exatamente para tornar esse processo
+              simples, automático e muito mais confiável. Com ele, você mantém o
               controle em dia e evita desperdícios, prejuízos e retrabalho.
             </p>
             <Link to={"/signup"}>
